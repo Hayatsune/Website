@@ -1,0 +1,78 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+@*<
+        Copyright 2016 Hayatsune
+*@
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hayatsune's website</title>
+        @Styles.Render("~/Content/aboutVideocss")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/player")
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    </head>
+
+    <body>
+        <video autoplay loop id="player">
+            <source src="/Videos/Pride Kakumei.mp4" type="video/mp4">
+            <!--<source src="/video/96neko.webm" type="video/webm">	-->
+        </video>
+
+        <div id="panel">
+            <div class="fade" id="onclick">
+                <h1><img src="/Images/logo.png" width="200" height="30" id="logo" alt="hayatsune.com" /></h1>
+                <p class="blog">Back on my blog</p>
+            </div>
+            <div class="fade scroll">
+                <h2>About</h2>
+                <p class="center">
+                    25 yo IT developer currently living in France. <br>
+                    Future random producer.
+                </p>
+            </div>
+            <div class="fade scroll" id="contact">
+                <h2>Contact</h2>
+                <p class="center">contact@hayatsune.com</p>
+            </div>
+            <div class="fade">
+                <ul class="link">
+                    <li class="twitter"><a href="https://twitter.com/Hayatsune" target="_blank"><span class="fa fa-twitter fa-3x"> Twitter</span></a></li>
+                    <li class="youtube"><a href="https://www.youtube.com/channel/UCOVZPFZFtH1giALkrHn5tuA" target="_blank"><span class="fa fa-youtube-play"> Youtube</span></a></li>
+                    <li class="mal"><a href="http://myanimelist.net/profile/Hayatsune" target="_blank"><span class="fa fa-medium"> MyAnimeList</span></a></li>
+                    <li class="github"><a href="https://github.com/Hayatsune" target="_blank"><span class="fa fa-github"> Github</span></a></li>
+                    <li class="tumblr"><a href="http://hayatsune.tumblr" target="_blank"><span class="fa fa-tumblr"> Tumblr</span></a></li>
+                    <li class="steam"><a href="http://steamcommunity.com/id/Hayatsune/" target="_blank"><span class="fa fa-steam"> Steam</span></a></li>
+                </ul>
+            </div>
+            <div class="fade" id="media-controls">
+                <span class="fa fa-pause fa-lg" id="play-pause-button" onclick="togglePlayPause();"></span>
+                <span class="fa fa-volume-down fa-lg" id="mute-button" onclick="toggleMute();" /></span>
+                <!--volume bar to do -->
+                <span id="slider"></span>
+            </div>
+        </div>
+        <div id="progressbar" class="progressbar">
+            <div class="progress">
+                <div id="bufferprogress" class="progress" style="background: #ccc"></div>
+                <div id="timeprogress" class="progress" style="background: red"></div>
+            </div>
+        </div>
+    </body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59809946-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    </html>
+

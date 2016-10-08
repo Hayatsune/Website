@@ -1,0 +1,291 @@
+/*
+Copyright 2016 Hayatsune
+*/
+
+body {
+	border: none;
+	margin: 0;
+	padding: 10px;
+	background: #FFF;
+	color: #FFF;
+}
+
+*{
+	font-size: 13px;
+	font-family:Meiryo, sans-serif;
+	line-height: 150%;
+}
+
+div#panel {
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+	width: 320px;
+	text-align: center;
+	font: 14px/16px sans-serif;
+}
+
+div.fade {
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	display: block;
+	padding: 5px 0;
+	background: rgb(0,0,0);
+	opacity:0.2;
+}
+
+div.fade:hover {
+	background: rgb(0,0,0);
+	opacity:0.7;
+}
+
+div.scroll {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	height: 45px;
+	padding: 5px 0;
+	overflow: hidden;
+}
+
+div.scroll:hover {
+	height: 140px;
+}
+
+div#contact:hover {
+	height: 100px;
+}
+
+h1 {
+	padding: 10px 10px;
+}
+
+h2 {
+	padding: 5px 10px;
+	font-size:18px;
+	text-align:center;
+}
+
+a {
+	color:#FFF;
+	text-decoration: none;
+}
+
+#panel a:hover {
+	color:#C0C0C0;
+	 transition: color 0.5s ease-out
+}
+
+#panel p, #panel ul li {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top:0;
+	padding-bottom:5px;
+}
+
+#panel ul {
+	padding: 0;
+}
+
+#panel p {
+	padding-top:0;
+	padding-bottom:10px;
+}
+
+#panel ul.link li {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	float:left;
+}
+
+#panel ul.link {
+	padding-top:5px;
+	padding-bottom:40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+li.twitter {
+	position:absolute;
+	bottom:65px;
+	left:20px;
+}
+
+li.youtube {
+	position:absolute;
+	bottom:65px;
+	left:95px;
+}
+
+li.mal {
+	position:absolute;
+	bottom:65px;
+	left:170px;
+}
+
+li.github {
+	position:absolute;
+	bottom:45px;
+	left:20px;
+}
+
+li.tumblr {
+	position:absolute;
+	bottom:45px;
+	left:95px;
+}
+
+li.steam {
+	position:absolute;
+	bottom:45px;
+	left:170px;
+}
+
+#player {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    width: 100%; 
+    height:auto;
+    z-index: -100;
+}
+
+#logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.blog {
+	text-align:center;
+	font-size:14pt;
+}
+
+p.center {
+	text-align:center;
+}
+
+.progressbar {
+  position: fixed;
+  bottom: 0px;
+  left:0px;
+  width: 100%;
+  height: 5px;
+}
+
+.progressbar:hover .progress {
+    margin-top: -10px;
+    padding-top: 10px;
+}
+
+.progress {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  transition: height 0.1s ease-out, width 0.4s linear, background-color 0.5s ease-out;
+}
+
+#timeprogress {
+	width:0%;
+	left:0%;
+}
+
+#bufferprogress {
+	width:0%;
+	left:0%;
+}
+
+.progress:hover {
+  background-color: rgba(13, 13, 13, 0.5);
+  cursor: pointer;
+}
+
+#media-controls {
+	height:20px;
+}
+
+#play-pause-button {
+	position:absolute;
+	left:80px;
+	bottom:9px;
+}
+
+#play-pause-button:hover {
+	cursor: pointer;
+}
+
+#mute-button {
+	position:absolute;
+	left:110px;
+	bottom:9px;
+}
+
+#mute-button:hover {
+	cursor: pointer;
+}
+
+#slider {
+	left:130px;
+	bottom:8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333 #333 #777 #333;
+    border-radius: 25px;
+    width: 100px;
+    position:absolute;
+    height: 13px;
+    background-color: #8e8d8d;
+    background: url('http://hayatsune.com/Images/Slider/bg-track.png') repeat top left;
+    box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 0 1px 0 0px rgba(250, 250, 250, .5);
+}
+
+.volume {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    right: -5px;
+    position: absolute;
+    margin-top: -5px;
+}
+
+.ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: url('http://hayatsune.com/Images/Slider/handle.png') no-repeat 50% 50%;
+    font-weight: bold;
+    color: #1C94C4;
+    outline: none;
+    top: -7px;
+    margin-left: -12px;
+}
+
+.ui-slider-range {
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #ffffff 0%, #eaeaea 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=0);
+    /* IE6-9 */
+    position: absolute;
+    border: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 25px;
+}
