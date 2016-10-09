@@ -94,6 +94,11 @@
     margin: 0 auto 100px;
     height: 800px;
     width: 400px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none; /* Opera */
+    user-select: none;
     -webkit-transition: -webkit-transform 50ms linear;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateX(-10deg) rotateY(20deg);
