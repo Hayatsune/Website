@@ -25,171 +25,177 @@
    0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
    ========================================================================== */
 
-   /* ==========================================================================
+/* ==========================================================================
    2. General
    ========================================================================== */
 
-   body {
-    font-family:'Open Sans', sans-serif !important;
-    background-color:#1a1a1a !important;
-   }
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    background-color: #1a1a1a !important;
+}
 
-   .navbar {
-       background-color:black !important;
-   }
-   
-   #bodyindex {
-       color:#cccccc;
-   }
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
 
-    .link {
-        color:#999999;
-        -moz-transition: color .2s linear;
-        o-transition: color .2s linear;
-        -webkit-transition: color .2s linear;
-        transition: color .2s linear;
-   }
-
-   .link:hover {
-        color:#ffffff;
-   }
-
-   #logomenu {
-        color:#999999;
-        -moz-transition: color .2s linear;
-        o-transition: color .2s linear;
-        -webkit-transition: color .2s linear;
-        transition: color .2s linear;
-   }
-
-   #logomenu:hover {
-        color:#ffffff;
-   }
-
-   .row {
-    margin-left:0px !important;
-    margin-right:0px !important;
-   }
-
-    a {
-      text-decoration:none !important;
+    .navbar li {
+        color: #000;
     }
 
-    .twitter {
-      color:#00ACED !important;
-      -moz-transition: all .2s ease-in !important;
-      -o-transition: all .2s ease-in !important;
-      -webkit-transition: all .2s ease-in !important;
-      transition: all .2s ease-in !important;
+#bodyindex {
+    color: #cccccc;
+}
+
+.link {
+    color: #999999;
+    -moz-transition: color .2s linear;
+    o-transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+    .link:hover {
+        color: #ffffff;
     }
+
+#logomenu {
+    color: #999999;
+    -moz-transition: color .2s linear;
+    o-transition: color .2s linear;
+    -webkit-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+    #logomenu:hover {
+        color: #ffffff;
+    }
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.twitter {
+    color: #00ACED !important;
+    -moz-transition: all .2s ease-in !important;
+    -o-transition: all .2s ease-in !important;
+    -webkit-transition: all .2s ease-in !important;
+    transition: all .2s ease-in !important;
+}
 
     .twitter:hover {
-      color:#4dcfff !important;
+        color: #4dcfff !important;
     }
 
-    hr {
-      border: 0 !important; 
-      height: 1px !important; 
-      background-image: -webkit-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
-      background-image: -moz-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
-      background-image: -ms-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
-      background-image: -o-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
-    }
+hr {
+    border: 0 !important;
+    height: 1px !important;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
+    background-image: -moz-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
+    background-image: -ms-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
+    background-image: -o-linear-gradient(left, #f0f0f0, #bfbfbf, #f0f0f0) !important;
+}
 
-    #copyright {
-        cursor:default;
-    }
+#copyright {
+    cursor: default;
+}
 
 /* ==========================================================================
    4. Index
    ========================================================================== */
 
-   .author-thumb {
-      border-radius: 50%;
-      width:100px;
-   }
+.author-thumb {
+    border-radius: 50%;
+    width: 100px;
+}
 
-   .post-excerpt {
-      padding-top:10px;
-      text-align: justify;
-   }
+.post-excerpt {
+    padding-top: 10px;
+    text-align: justify;
+}
 
-   .author-profile {
-      text-align: center;
-   }
+.author-profile {
+    text-align: center;
+}
 
-   .author-stats {
-      font-size:24px;
-   }
+.author-stats {
+    font-size: 24px;
+}
 
-    .post {
-      background-color: rgba(0,0,0,0.05);
-      border-radius: 10px;
-      padding: 10px;
-      margin: 1em 0;
-      box-shadow: inset 0 0 4px .1px #808080;
-   }
+.post {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1em 0;
+    box-shadow: inset 0 0 4px .1px #808080;
+}
 
-   .post-index {
-      background-color: rgba(0,0,0,0.05);
-      border-radius: 10px;
-      padding: 10px;
-      margin: 1em 0;
-      box-shadow: inset 0 0 4px .1px #808080;
-   }
+.post-index {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1em 0;
+    box-shadow: inset 0 0 4px .1px #808080;
+}
 
-   .page-number {
-      margin-left:-4em;
-   }
+.page-number {
+    margin-left: -4em;
+}
 
-   .post-img {
-      width:100%;
-      padding-bottom:15px;
-   }
+.post-img {
+    width: 100%;
+    padding-bottom: 15px;
+}
 
-   /* ==========================================================================
+/* ==========================================================================
    5. Single Post
    ========================================================================== */
 
-   .post-title {
-      text-align: center;
-      font-size:42px;
-   }
+.post-title {
+    text-align: center;
+    font-size: 42px;
+}
 
-   .post-meta {
-      text-align: center;
-   }
+.post-meta {
+    text-align: center;
+}
 
-   .post-content {
-      font-size:16px;
-   }
+.post-content {
+    font-size: 16px;
+}
 
-   .author {
-      text-align: center;
-   }
+.author {
+    text-align: center;
+}
 
-   .share {
-      text-align:center;
-      padding-bottom:15px;
-   }
+.share {
+    text-align: center;
+    padding-bottom: 15px;
+}
 
-   .share-text {
-      font-size:13px;
-      font-weight:bold;
-   }
+.share-text {
+    font-size: 13px;
+    font-weight: bold;
+}
 
-   .single-post-date {
-      margin-top:-10px;
-   }
+.single-post-date {
+    margin-top: -10px;
+}
 
-  /* ==========================================================================
+/* ==========================================================================
    6. Tag Archive
    ========================================================================== */
 
-   .page-title {
-      text-align:center;
-      color:#ff9933;
-   }
+.page-title {
+    text-align: center;
+    color: #ff9933;
+}
 
 /* ==========================================================================
    10. Footer
@@ -198,40 +204,42 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
+
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 40px;
+    /* Margin bottom by footer height */
+    margin-bottom: 40px;
 }
+
 .container-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .anchor-top {
-  position:fixed;
-  right:20px;
-  bottom:10px;
-  color:#999999;
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    color: #999999;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
-.anchor-top:visited {
-  color:#999999;
-}
+    .anchor-top:visited {
+        color: #999999;
+    }
 
-.anchor-top:hover {
-  color:#ffffff;
-}
+    .anchor-top:hover {
+        color: #ffffff;
+    }
 
 
 /* Custom page CSS
@@ -240,8 +248,138 @@ body {
 
 
 .container-footer .text-muted {
-  position: absolute;
-  left:10px;
-  padding-top : 10px;
+    position: absolute;
+    left: 10px;
+    padding-top: 10px;
 }
-   
+
+
+/* Stars background */
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -30000px;
+    }
+}
+
+@-webkit-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -30000px;
+    }
+}
+
+@-moz-keyframes move-twink-back {
+    from {
+        background-position: 0 center;
+    }
+
+    to {
+        background-position: 0 -30000px;
+    }
+}
+
+@-ms-keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -30000px;
+    }
+}
+
+.stars, .twinkling {
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.stars {
+    background: #000 url(/Images/bg/stars.png) repeat top center;
+    z-index: -3;
+    /* stars goes up
+    moz-animation: move-twink-back 800s linear infinite;
+    -ms-animation: move-twink-back 800s linear infinite;
+    -o-animation: move-twink-back 800s linear infinite;
+    -webkit-animation: move-twink-back 800s linear infinite;
+    animation: move-twink-back 800s linear infinite;*/
+}
+
+.twinkling {
+    background: transparent url(/Images/bg/twinkling.png) repeat top center;
+    z-index: -2;
+    -moz-animation: move-twink-back 1200s linear infinite;
+    -ms-animation: move-twink-back 1200s linear infinite;
+    -o-animation: move-twink-back 1200s linear infinite;
+    -webkit-animation: move-twink-back 1200s linear infinite;
+    animation: move-twink-back 1200s linear infinite;
+}
+
+.waves
+{
+    width:100%;
+	position:fixed;
+	top:20%; right:1%; bottom:0; left:1%%;
+	opacity:0.3;
+	background: transparent url(/Images/bg/lines.jpg) repeat top left;
+    background-size: 100% 100%;
+	-webkit-mask-image: url(/Images/bg/wavey4.png);
+	-webkit-mask-repeat:repeat-y;
+	-webkit-animation-name: pulsed;
+	-webkit-animation-duration: 1000s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	z-index:-1;
+}
+.waves2
+{
+    width:100%;
+	position:fixed;
+	top:20%;; right:1%; bottom:0; left:1%%;
+	background: transparent url(/Images/bg/lines.jpg) repeat top left;
+	opacity:0.2;
+	-webkit-mask-image: url(/Images/bg/wavey3.png);
+	-webkit-mask-repeat:repeat-y;
+	-webkit-animation-name: pulsedecho;
+	-webkit-animation-duration: 1000s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	
+}
+
+.pulsed
+{
+    width:100%;
+	position:fixed;
+	top:20%;; right:1%; bottom:0; left:1%%;
+	-webkit-mask-image: url(/Images/bg/fade.png);
+	-webkit-mask-repeat:repeat-x;
+	
+}
+
+@-webkit-keyframes pulsed {
+    width:100%;
+	0% { -webkit-mask-position: 0px 5000px; background-position: 1% 1%; }
+	50% { -webkit-mask-position: 0px 5000px; background-position: +1000% 1%; }
+	100% { -webkit-mask-position: 0px 15000px; background-position: +1000% 1%; }
+}
+
+@-webkit-keyframes pulsedecho {
+    width:100%;
+	0% { -webkit-mask-position: 0px 20000px; background-position: +1000% 1%; }
+	50% { -webkit-mask-position: 0px 15000px; background-position: 0% 1%; }
+	100% { -webkit-mask-position: 0px 0px; background-position: +1000% 1%; }
+}

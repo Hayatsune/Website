@@ -113,4 +113,54 @@
             return v1 >= v2 ? true : false;
         }
     });
+
+
+    /*
+    * Replace div for cube
+    */
+    $('.skills').hover(function () {
+        $('.parentmenu').find('.languages').hide();
+        $('.parentmenu').find('.skills').hide();
+        $('.parentlanguage').find('.languageslist').hide();
+        $('.parent').find('.parentlanguage').hide();
+        $('.parentskill').find('.skillslist').fadeIn(200);
+        $('.parentskill').find('.skillslist').show();
+    }, function () {
+        $('.parentskill').find('.skillslist').hide();
+    });
+
+    $('.parentskill').hover(function () {
+    }, function () {
+        $('.parentskill').find('.skillslist').hide();
+        $('.parentlanguage').find('.languageslist').hide();
+        $('.parentmenu').find('.skills').fadeIn(200);
+        $('.parentmenu').find('.skills').show();
+        $('.parentmenu').find('.languages').fadeIn(200);
+        $('.parentmenu').find('.languages').show();
+        $('.parent').find('.parentlanguage').fadeIn(200);
+        $('.parent').find('.parentlanguage').show();
+    });
+
+    $('.languages').hover(function () {
+        $('.parentmenu').find('.skills').hide();
+        $('.parentmenu').find('.languages').hide();
+        $('.parentskill').find('.skillslist').hide();
+        $('.parent').find('.parentskill').hide();
+        $('.parentlanguage').find('.languageslist').fadeIn(200);
+        $('.parentlanguage').find('.languageslist').show();
+    }, function () {
+        $('.parentlanguage').find('.languageslist').hide();
+    });
+
+    $('.parentlanguage').hover(function () {
+    }, function () {
+        $('.parentlanguage').find('.languageslist').hide();
+        $('.parentskill').find('.skillslist').hide();
+        $('.parentmenu').find('.languages').fadeIn(200);
+        $('.parentmenu').find('.languages').show();
+        $('.parentmenu').find('.skills').fadeIn(200);
+        $('.parentmenu').find('.skills').show();
+        $('.parent').find('.parentskill').fadeIn(200);
+        $('.parent').find('.parentskill').show();
+    });
 });

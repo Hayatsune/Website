@@ -207,10 +207,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\main.css" />
+    <Content Include="Images\bg\fade.png" />
+    <Content Include="Images\bg\lines.jpg" />
+    <Content Include="Images\bg\wavey3.png" />
+    <Content Include="Images\bg\wavey4.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Slider\bg-track.png" />
     <Content Include="Images\Slider\handle.png" />
     <Content Include="Images\Slider\volume.png" />
+    <Content Include="Images\bg\stars.png" />
+    <Content Include="Images\bg\twinkling.png" />
     <Content Include="Scripts\about.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -298,7 +304,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58663</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
