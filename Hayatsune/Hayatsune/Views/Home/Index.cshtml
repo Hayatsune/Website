@@ -2,10 +2,30 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="bodyindex">
-    <h1>Under construction</h1>
-    <p>Migrating to ASP.NET from MEAN stack.</p>
-
-    <p>Update : I've begun to work on my website again recently so there will be some changes soon.
-    You should expect some articles and widgets like "Waifu of the season" or "My TOP3 OP/ED of the season" for example.</p>
+<div id="content">
+    <h1><img src="/Images/logo.png" width="600" height="90" id="logo" alt="hayatsune.com" /></h1>
+    <section id="works">
+        <header>
+            <h2><span>WORKS</span></h2>
+        </header>
+        <div class="section">
+            <center>In progress.</center>
+        </div>
+    </section>
+    <section id="about">
+        <header>
+            <h2><span>ABOUT</span></h2>
+        </header>
+        @RenderPage("About.cshtml")
+    </section>
+    <section id="contact">
+        <header>
+            <h2><span>CONTACT</span></h2>
+        </header>
+        <div class="innerS">
+            <div class="contact">
+                hayatsune@contact.com
+            </div>
+        </div>
+    </section>
 </div>

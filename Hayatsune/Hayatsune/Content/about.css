@@ -1,64 +1,45 @@
 ﻿h2 {
     margin-top: 0;
-    padding-bottom:20px;
     font-size:55px;
     text-align:center;
 }
 
-.parentskill, .parentlanguage {
-    width:100%;
-    height:100%;
-}
-
-.skillslist {
-    font-size: 35px;
-    vertical-align: middle;
-    line-height: 35px;
-    display: none;
-    width:100%;
-    padding-bottom:40px;
-}
-
-.languageslist {
-    font-size: 35px;
-    vertical-align: middle;
-    line-height: 35px;
-    display: none;
-    width:100%;
-    padding-bottom:40px;
+.languagesTitle, .skillsTitle, .hobbiesTitle, .musicTitle {
+    margin-bottom: 10px !important;
 }
 
 .progress-bar {
     height:35px;
+    margin-bottom: 3px;
 }
 
-.progress-bar-success {
+.bg-success {
     font-size: 20px;
     vertical-align: middle;
     text-align:center;
     height:35px;
 }
 
-.progress-bar-info {
-    font-size: 20px;
-    vertical-align: middle;
-    text-align:center;
-    height:35px;
-}
+.bg-info {
+        font-size: 20px;
+        vertical-align: middle;
+        text-align: center;
+        height: 35px;
+    }
 
-.progress-bar-warning {
-    font-size: 20px;
-    vertical-align: middle;
-    text-align:center;
-    height:35px;
-}
+.bg-warning {
+        font-size: 20px;
+        vertical-align: middle;
+        text-align: center;
+        height: 35px;
+    }
 
-.progress-bar-danger {
-    font-size: 20px;
-    vertical-align: middle;
-    text-align:center;
-    height:35px;
-}
+.bg-danger {
+        font-size: 20px;
+        vertical-align: middle;
+        text-align: center;
+        height: 35px;
+    }
 
 #about {
     font-size:25px;
@@ -68,7 +49,7 @@
     text-align:center;
 }
 
-#hobbies {
+.hobbies, .softwares {
     font-size:35px;
     padding-bottom:10px;
     vertical-align:middle;
@@ -109,16 +90,6 @@
     padding-right:100px;
 }
 
-.right {
-    float:right;
-}
-
-.left {
-    float:left;
-    width:100%;
-}
-
-
 .viewport {
     -webkit-perspective: 800px;
     -webkit-perspective-origin: 50% 200px;
@@ -134,7 +105,7 @@
 .cube {
     position: relative;
     margin: 0 auto 100px;
-    height: 800px;
+    height: 400px;
     width: 400px;
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */

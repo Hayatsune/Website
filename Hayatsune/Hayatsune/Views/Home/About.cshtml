@@ -1,125 +1,63 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-
-    <div class="wrapper">
-        <article class="viewport">
-            <section class="cube">
-                <div></div>
-                <div>
-                    <h2>About</h2>
-                    <p id="about">IT Engineer</p>
-                    <p id="about">contact@hayatsune.com</p>
-                    <span class="socialleft">
-                        <div class="social"><a href="https://twitter.com/Hayatsune" target="_blank"><span class="fa fa-twitter fa-3x"></span></a></div>
-                        <div class="social"><a href="https://www.youtube.com/channel/UCOVZPFZFtH1giALkrHn5tuA" target="_blank"><span class="fa fa-youtube-play fa-3x"></span></a></div>
-                        <div class="social"><a href="http://myanimelist.net/profile/Hayatsune" target="_blank"><span class="fa fa-medium fa-3x"></span></a></div>
-                    </span>
-                    <span class="socialright">
-                        <div class="social"><a href="https://github.com/Hayatsune" target="_blank"><span class="fa fa-github fa-3x"></span></a></div>
-                        <div class="social"><a href="http://hayatsune.tumblr" target="_blank"><span class="fa fa-tumblr fa-3x"></span></a></div>
-                        <div class="social"><a href="http://steamcommunity.com/id/Hayatsune/" target="_blank"><span class="fa fa-steam fa-3x"></span></a></div>
-                    </span>
+﻿<div class="wrapper">
+    <article class="viewport">
+        <section class="cube">
+            @* Up *@
+            <div>
+            </div>
+            @* About side *@
+            <div>
+                <h2 class="musicTitle">Music softwares</h2>
+                <p class="softwares">Ableton Live 10</p>
+                <p class="softwares">VOCALOID</p>
+            </div>
+            @* Languages side *@
+            <div class="languages">
+                <h2 class="languagesTitle"> Languages</h2>
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    French
                 </div>
-                <div>
-               @* empty *@
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                    English
                 </div>
-                <div class="parent">
-                <div class="parentmenu">
-                    <div class="skills">
-                        <h2 class="skills">Skills</h2>
-                    </div>
-                    <div class="languages">
-                        <h2 class="languages">Languages</h2class="skills">
-                    </div>
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    Spanish
                 </div>
-                    <div class="parentskill">
-                    <div class="skillslist">
-                        <span class="left">
-                            <div class="progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                JEE
-                            </div>
-                        </span>
-                    </div>
-                    <div class="skillslist">
-                        <span class="left">
-                            <div class="progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                             JS/CSS   
-                            </div>
-                        </span>
-                    </div>
-                    <div class="skillslist">
-                        <span class="left">
-                            <div class="progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                SQL
-                            </div>
-                        </span>
-                    </div>
-                    <div class="skillslist">
-                        <span class="left">
-                            <div class="progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                .NET
-                            </div>
-                        </span>
-                    </div>
-                    <div class="skillslist">
-                        <span class="left">
-                            <div class="progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                Android/iOS
-                            </div>
-                        </span>
-                    </div>
-                    <div class="skillslist">
-                        <span class="left">
-                            <div class="progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                Unity
-                            </div>
-                        </span>
-                    </div>
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                    Japanese
                 </div>
-                <div class="parentlanguage">
-                    <div class="languageslist">
-                        <span class="left">
-                            <div class="progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                                French
-                            </div>
-                        </span>
-                    </div>
-                    <div class="languageslist">
-                        <span class="left">
-                            <div class="progress-bar-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                English
-                            </div>
-                        </span>
-                    </div>
-                    <div class="languageslist">
-                        <span class="left">
-                            <div class="progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-                                Spanish
-                            </div>
-                        </span>
-                    </div>
-                    <div class="languageslist">
-                        <span class="left">
-                            <div class="progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                                Japanese
-                            </div>
-                        </span>
-                    </div>
+            </div>
+            @* Skills side *@
+            <div class="skills">
+                <h2 class="skillsTitle"> Skills</h2>
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    JEE
                 </div>
-                    </div>
-                <div>
-                    <h2>Hobbies</h2>
-                    <p id="hobbies">Music</p>
-                    <p id="hobbies">Anime</p>
-                    <p id="hobbies">Video games</p>
-                    <p id="hobbies">Coding</p>
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                    .NET
                 </div>
-                <div>
-
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    JS/CSS
                 </div>
-            </section>
-        </article>
-
-    </div>
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    SQL
+                </div>
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                    Android/iOS
+                </div>
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                    Unity
+                </div>
+            </div>
+            <div>
+                <h2 h2 class="hobbiesTitle">Hobbies</h2>
+                <p class="hobbies">Music</p>
+                <p class="hobbies">Anime</p>
+                <p class="hobbies">Video games</p>
+                <p class="hobbies">Coding</p>
+            </div>
+            @* Bottom *@
+            <div>
+            </div>
+        </section>
+    </article>
+</div>
