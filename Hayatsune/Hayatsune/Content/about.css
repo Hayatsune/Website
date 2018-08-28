@@ -61,7 +61,7 @@
     cursor:default;
 }
 
-.fa-twitter, .fa-youtube-play, .fa-medium, .fa-github, .fa-tumblr, .fa-steam {
+.fa-twitter, .fa-youtube, .fa-medium, .fa-github, .fa-tumblr, .fa-steam, .fa-instagram {
     color: #808080;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -69,9 +69,8 @@
     transition: all .2s ease-in;
 }
 
-.fa-twitter:hover, .fa-youtube-play:hover, .fa-medium:hover, .fa-github:hover, .fa-tumblr:hover, .fa-steam:hover {
-    color: #FFFFFF;
-
+.fa-twitter:hover, .fa-youtube:hover, .fa-medium:hover, .fa-github:hover, .fa-tumblr:hover, .fa-steam:hover, .fa-instagram:hover {
+    color: #000000;
 }
 
 .social {
