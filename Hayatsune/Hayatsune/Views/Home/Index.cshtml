@@ -2,30 +2,26 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="content">
-    <h1><img class="logo" src="/Images/logo.png" width="600" height="90" id="logo" alt="hayatsune.com" /></h1>
-    <section id="works">
-        <header>
+<div class="content">
+    <img class="logo" src="/Images/logo.png" width="600" height="90" id="logo" alt="hayatsune.com" />
+    <div class="works" id="works">
             <h2><span>WORKS</span></h2>
-        </header>
-        <div class="section">
+        <div class="worksSection">
             <center>In progress.</center>
         </div>
-    </section>
-    <section id="about">
-        <header>
-            <h2><span>ABOUT</span></h2>
-        </header>
+    </div>
+    <div class="about" id="about">
+        <h2><span>ABOUT</span></h2>
+        <div class="aboutSection">
         @RenderPage("About.cshtml")
-    </section>
-    <section id="contact">
-        <header>
+        </div>
+    </div>
+    <div class="contact" id="contact">
             <h2><span>CONTACT</span></h2>
-        </header>
         <div class="innerS">
-            <div class="contact">
+            <div class="contactSection">
                 contact@hayatsune.com
             </div>
         </div>
-    </section>
+    </div>
 </div>

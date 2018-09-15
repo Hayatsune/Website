@@ -53,19 +53,21 @@
         ga('send', 'pageview');
     </script>
 </head>
-<body id="top">
-    <div id="wrapper">
+<body>
+    <div id="top"></div>
+        <div id="wrapper">
 
 
-        @RenderPage("_Navigation.cshtml")
+            @RenderPage("_Navigation.cshtml")
 
-        <div class="container body-content">
-            @RenderBody()
-            @*<hr />*@
+            <div class="container body-content">
+                @RenderBody()
+                @*<hr />*@
+            </div>
+
+            @* Disqus
+            <script id="dsq-count-scr" src="//hayatsune.disqus.com/count.js" async></script> *@
         </div>
-
-        @* Disqus
-        <script id="dsq-count-scr" src="//hayatsune.disqus.com/count.js" async></script> *@
-    </div>
+    <p class="copyright text-muted" href="http://Hayatsune.com">Hayatsune &copy; @DateTime.Now.Year</p>
 </body>
 </html>

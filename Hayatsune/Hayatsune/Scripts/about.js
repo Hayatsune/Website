@@ -1,4 +1,14 @@
 ﻿$(document).ready(function () {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
     $("#about").click(function () {
         var el = document.createElement('div'),
              transformProps = 'transform WebkitTransform MozTransform OTransform msTransform'.split(' '),
